@@ -1,14 +1,16 @@
 /*
 Theme Name: _conversations
-Theme URI: http://underscores.me/
-Author: Underscores.me
-Author URI: http://underscores.me/
+Theme URI: http://cronkiteconversations.asu.edu
+Author: Jeremy Leggat
+Author URI: https://cronkite.asu.edu
 Description: Description
 Version: 1.0.0
+GitHub Theme URI: https://github.com/cronkiteschool/_conversations
+GitHub Branch: master
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: _conversations
-Tags:
+Tags: white, black, light, two-columns, right-sidebar, fixed-layout, responsive-layout
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
@@ -271,7 +273,7 @@ button,
 input,
 select,
 textarea {
-	color: #404040;
+	color: #333;
 	font-family: sans-serif;
 	font-size: 16px;
 	font-size: 1rem;
@@ -285,10 +287,13 @@ h4,
 h5,
 h6 {
 	clear: both;
+	color: #444;
+	font-weight: normal;
+	font-family: Georgia, "Times New Roman", serif;
 }
 
 p {
-	margin-bottom: 1.5em;
+	margin-bottom: .8em;
 }
 
 dfn,
@@ -357,7 +362,7 @@ html {
 }
 
 body {
-	background: #fff; /* Fallback for when there is no custom background color defined. */
+	background: #fff;
 }
 
 blockquote:before,
@@ -530,17 +535,22 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-	color: royalblue;
+	color: #444;
+	text-decoration: none;
 }
 
 a:visited {
-	color: purple;
+	color: #444;
+}
+
+.site-main a {
+	font-weight: normal;
 }
 
 a:hover,
 a:focus,
 a:active {
-	color: midnightblue;
+	color: black;
 }
 
 a:focus {
@@ -761,9 +771,27 @@ a:active {
 	margin: 0 0 1.5em;
 }
 
+.widget a {
+	color: #555;
+	font-size: 1.2em;
+}
+
 /* Make sure select elements fit in widgets. */
 .widget select {
 	max-width: 100%;
+}
+
+.widget ul {
+	margin-left: 0;
+	padding-left: 20px;
+}
+
+.widget ul li {
+	list-style: none;
+	margin-left: 0;
+	font-family: Georgia, "Times New Roman", serif;
+	padding-top: 3px;
+	padding-bottom: 5px;
 }
 
 /*--------------------------------------------------------------
@@ -793,7 +821,10 @@ a:active {
 .page-content,
 .entry-content,
 .entry-summary {
-	margin: 1.5em 0 0;
+}
+
+.entry-title {
+	margin-bottom: 0;
 }
 
 .page-links {
@@ -814,6 +845,10 @@ a:active {
 --------------------------------------------------------------*/
 .comment-content a {
 	word-wrap: break-word;
+}
+
+.comments-area ul {
+	list-style: none;
 }
 
 .bypostauthor {
@@ -924,3 +959,34 @@ object {
 .gallery-caption {
 	display: block;
 }
+
+@media (min-width: 1000px) {
+	.site {
+		margin: 0 auto;
+		max-width: 1170px;
+	}
+	.content-area {
+		float: left;
+		margin: 0 -25% 0 0;
+		width: 100%;
+	}
+	.site-main {
+		margin: 0 25% 0 0;
+	}
+	.site-content .widget-area {
+		float: right;
+		overflow: hidden;
+		width: 25%;
+	}
+	.site-footer {
+		clear: both;
+		width: 100%;
+	}
+}
+#content .entry-meta {
+	color: #777;
+	font-size: .8em;
+	margin-bottom: 8px;
+	margin-top: -5px;
+}
+
