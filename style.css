@@ -738,6 +738,30 @@ a:active {
 	margin-right: auto;
 }
 
+@media (min-width: 1000px) {
+	.site {
+		margin: 0 auto;
+		max-width: 1170px;
+	}
+	.content-area {
+		float: left;
+		margin: 0 -25% 0 0;
+		width: 100%;
+	}
+	.site-main {
+		margin: 0 25% 0 0;
+	}
+	.site-content .widget-area {
+		float: right;
+		overflow: hidden;
+		width: 25%;
+	}
+	.site-footer {
+		clear: both;
+		width: 100%;
+	}
+}
+
 /*--------------------------------------------------------------
 # Clearings
 --------------------------------------------------------------*/
@@ -832,6 +856,13 @@ a:active {
 .page-links {
 	clear: both;
 	margin: 0 0 1.5em;
+}
+
+#content .entry-meta {
+	color: #777;
+	font-size: .8em;
+	margin-bottom: 8px;
+	margin-top: -5px;
 }
 
 /*--------------------------------------------------------------
@@ -962,33 +993,5 @@ object {
 	display: block;
 }
 
-@media (min-width: 1000px) {
-	.site {
-		margin: 0 auto;
-		max-width: 1170px;
-	}
-	.content-area {
-		float: left;
-		margin: 0 -25% 0 0;
-		width: 100%;
-	}
-	.site-main {
-		margin: 0 25% 0 0;
-	}
-	.site-content .widget-area {
-		float: right;
-		overflow: hidden;
-		width: 25%;
-	}
-	.site-footer {
-		clear: both;
-		width: 100%;
-	}
-}
-#content .entry-meta {
-	color: #777;
-	font-size: .8em;
-	margin-bottom: 8px;
-	margin-top: -5px;
 }
 
