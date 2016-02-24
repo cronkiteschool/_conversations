@@ -770,8 +770,8 @@ a:active {
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
-.widget {
-	margin: 0 0 1.5em;
+#secondary.widget-area {
+	padding-left: 20px;
 }
 
 .widget a {
@@ -786,7 +786,6 @@ a:active {
 
 .widget ul {
 	margin-left: 0;
-	padding-left: 20px;
 }
 
 .widget ul li {
